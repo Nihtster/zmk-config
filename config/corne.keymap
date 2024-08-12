@@ -29,10 +29,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E  &kp R      &kp T            &kp Y    &kp U  &kp I         &kp O    &kp P     &kp ESC
-&ctrlShift  &kp A  &kp S  &kp D  &kp F      &kp G            &kp H    &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
-&kp RCTRL   &kp Z  &kp X  &kp C  &kp V      &kp B            &kp N    &kp M  &kp COMMA     &kp DOT  &kp FSLH  &trans
-                          &to 1  &kp SPACE  &kp BACKSPACE    &kp RET  &to 2  &kp LEFT_WIN
+&kp TAB         &kp Q  &kp W  &kp E  &kp R      &kp T            &kp Y    &kp U  &kp I         &kp O    &kp P     &kp DEL
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F      &kp G            &kp H    &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
+&kp RCTRL       &kp Z  &kp X  &kp C  &kp V      &kp B            &kp N    &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
+                              &to 1  &kp SPACE  &kp BACKSPACE    &kp RET  &to 2  &kp LEFT_WIN
             >;
         };
 
@@ -59,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB         &kp N7  &kp N8  &kp N9  &kp MINUS      &kp SLASH    &kp BACKSLASH  &kp UP    &kp PIPE       &kp LPAR        &kp RPAR         &kp UNDER
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp PLUS       &kp ASTRK    &kp LEFT       &kp DOWN  &kp RIGHT      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
-&kp LCTRL       &kp N1  &kp N2  &kp N3  &kp PERIOD     &kp EQUAL    &kp SEMI       &kp APOS  &kp COMMA      &kp LBKT        &kp RBKT         &kp TILDE
-                                &kp N0  &kp BACKSPACE  &kp SPACE    &kp RET        &to 0     &kp RIGHT_WIN
+&kp TAB         &kp N7  &kp N8  &kp N9  &kp MINUS   &kp SLASH        &kp BACKSLASH  &kp UP    &kp PIPE       &kp LPAR        &kp RPAR         &kp UNDER
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp PLUS    &kp ASTRK        &kp LEFT       &kp DOWN  &kp RIGHT      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
+&kp LCTRL       &kp N1  &kp N2  &kp N3  &kp PERIOD  &kp EQUAL        &kp SEMI       &kp APOS  &kp COMMA      &kp LBKT        &kp RBKT         &kp TILDE
+                                &kp N0  &kp SPACE   &kp BACKSPACE    &kp RET        &to 0     &kp RIGHT_WIN
             >;
         };
     };
