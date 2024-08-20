@@ -71,7 +71,7 @@
             bindings = <
 &kp TAB         &kp MINUS  &kp N7  &kp N8  &kp N9  &kp DEL      &kp BACKSLASH  &kp UNDER  &kp UP    &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp LEFT_SHIFT  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ENTER    &kp APOS       &kp LEFT   &kp DOWN  &kp RIGHT  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp LCTRL       &kp EQUAL  &kp N1  &kp N2  &kp N3  &none        &kp SEMI       &trans     &trans    &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp LCTRL       &kp SLASH  &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp SEMI       &trans     &trans    &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET
                                    &kp N0  &trans  &trans       &trans         &trans     &trans
             >;
         };
