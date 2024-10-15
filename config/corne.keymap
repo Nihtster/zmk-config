@@ -10,24 +10,6 @@
 
 / {
     behaviors {
-        ctrlShift: ctrlShift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CTRLSHIFT";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&kp LEFT_SHIFT>;
-        };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings = <&mo>, <&to>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <40>;
-            tapping-term-ms = <100>;
-        };
-<<<<<<< HEAD
-
         td1: td1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD1";
@@ -107,8 +89,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp N0>, <&kp RIGHT_PARENTHESIS>;
         };
-=======
->>>>>>> parent of 54122ab (switched layers to a new format and implemented test tap dancing)
     };
 
     keymap {
