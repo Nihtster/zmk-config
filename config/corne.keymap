@@ -26,9 +26,7 @@
     delay-ms = <0>;                   // 0
 };
 
-&mt {
-    tapping-term-ms = <400>;
-};
+&mt { tapping-term-ms = <400>; };
 
 / {
     behaviors {
@@ -167,6 +165,38 @@
             tapping-term-ms = <200>;
             bindings = <&kp SEMI>, <&kp COLON>;
         };
+
+        tdbracketL: tdbracketL {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBRACKETL";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_BRACKET>, <&kp LEFT_BRACE>;
+        };
+
+        tdbracketR: tdbracketR {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBRACKETR";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
+        };
+
+        tdbackslash: tdbackslash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBACKSLASH";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BACKSLASH>, <&kp PIPE>;
+        };
+
+        tdgrave: tdgrave {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDGRAVE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+        };
     };
 
     combos {
@@ -201,10 +231,10 @@
 
         num_sym {
             bindings = <
-&trans               &kp LEFT_ALT  &td7  &td8    &td9    &td0          &mt TILDE GRAVE              &none                          &kp UP_ARROW    &none            &none   &trans
-&mt LEFT_SHIFT CAPS  &none         &td4  &td5    &td6    &kp INSERT    &mt PIPE BACKSLASH           &kp LEFT_ARROW                 &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&kp ESC              &none         &td1  &td2    &td3    &kp DEL       &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &trans          &trans           &trans  &trans
-                                         &trans  &trans  &trans        &trans                       &trans                         &trans
+&trans               &kp LEFT_ALT  &td7  &td8    &td9    &td0          &tdgrave      &none           &kp UP_ARROW    &none            &none   &trans
+&mt LEFT_SHIFT CAPS  &none         &td4  &td5    &td6    &kp INSERT    &tdbackslash  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&kp ESC              &none         &td1  &td2    &td3    &kp DEL       &tdbracketL   &tdbracketR     &trans          &trans           &trans  &trans
+                                         &trans  &trans  &trans        &trans        &trans          &trans
             >;
         };
 
