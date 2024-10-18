@@ -107,6 +107,62 @@
             tapping-term-ms = <200>;
             bindings = <&kp N0>, <&kp RIGHT_PARENTHESIS>;
         };
+
+        tdperiod: tdperiod {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDPERIOD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp PERIOD>, <&kp GREATER_THAN>;
+        };
+
+        tdslash: tdslash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDSLASH";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SLASH>, <&kp QUESTION>;
+        };
+
+        tdcomma: tdcomma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDCOMMA";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp COMMA>, <&kp LESS_THAN>;
+        };
+
+        tdplusequals: tdplusequals {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDPLUSEQUALS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
+        };
+
+        tdminusunderscore: tdminusunderscore {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDMINUSUNDERSCORE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+        };
+
+        tdaposquote: tdaposquote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDAPOSQUOTE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp APOS>, <&kp DOUBLE_QUOTES>;
+        };
+
+        tdcolon: tdcolon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDCOLON";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SEMI>, <&kp COLON>;
+        };
     };
 
     combos {
@@ -123,9 +179,9 @@
 
         default_layer {
             bindings = <
-&kp TAB   &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y    &kp U              &kp I                &kp O                    &kp P                &mt PLUS EQUAL
-&kp CAPS  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RCTRL K          &mt RIGHT_ALT L          &mt COLON SEMICOLON  &mt DOUBLE_QUOTES APOS
-&kp DEL   &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M              &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH   &mt UNDER MINUS
+&kp TAB   &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y    &kp U              &kp I         &kp O            &kp P     &tdplusequals
+&kp CAPS  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RCTRL K   &mt RIGHT_ALT L  &tdcolon  &tdaposquote
+&kp DEL   &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N    &kp M              &tdcomma      &tdperiod        &tdslash  &tdminusunderscore
                                           &mo 1        &kp BACKSPACE     &kp SPACE    &kp RET  &mo 2              &kp LEFT_WIN
             >;
         };
