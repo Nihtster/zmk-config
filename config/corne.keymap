@@ -206,7 +206,7 @@
         compatible = "zmk,combos";
 
         mouseLayer {
-            bindings = <&mo 3>;
+            bindings = <&tog 3>;
             key-positions = <36 40>;
         };
     };
