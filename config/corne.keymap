@@ -26,6 +26,10 @@
     delay-ms = <0>;                   // 0
 };
 
+&mt {
+    tapping-term-ms = <400>;
+};
+
 / {
     behaviors {
         td1: td1 {
