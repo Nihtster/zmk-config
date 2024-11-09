@@ -219,10 +219,10 @@
 
         default_layer {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E  &kp R          &kp T        &kp Y    &kp U  &kp I         &kp O      &kp P     &tdplusequals
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F          &kp G        &kp H    &kp J  &kp K         &kp L      &tdcolon  &tdaposquote
-&kp RCTRL       &kp Z  &kp X  &kp C  &kp V          &kp B        &kp N    &kp M  &tdcomma      &tdperiod  &tdslash  &tdminusunderscore
-                              &mo 1  &kp BACKSPACE  &kp SPACE    &kp RET  &mo 2  &kp LEFT_WIN
+&kp TAB           &kp Q  &kp W  &kp E  &kp R          &kp T        &kp Y    &kp U  &kp I         &kp O      &kp P     &tdplusequals
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D  &kp F          &kp G        &kp H    &kp J  &kp K         &kp L      &tdcolon  &tdaposquote
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V          &kp B        &kp N    &kp M  &tdcomma      &tdperiod  &tdslash  &tdminusunderscore
+                                &mo 1  &kp BACKSPACE  &kp SPACE    &kp RET  &mo 2  &kp LEFT_WIN
             >;
         };
 
@@ -230,7 +230,7 @@
             bindings = <
 &trans                   &kp LEFT_ALT  &kp UP    &trans     &kp HOME       &kp END       &kp F1  &kp F2   &kp F3        &kp F4   &none  &bt BT_PRV
 &mt LEFT_SHIFT CAPSLOCK  &kp LEFT      &kp DOWN  &kp RIGHT  &kp PG_UP      &kp PG_DN     &kp F5  &kp F6   &kp F7        &kp F8   &none  &bt BT_NXT
-&trans                   &kp ESC       &none     &none      &kp INS        &kp DELETE    &kp F9  &kp F10  &kp F11       &kp F12  &none  &bt BT_CLR
+&trans                   &kp ESC       &to 3     &none      &kp INS        &kp DELETE    &kp F9  &kp F10  &kp F11       &kp F12  &none  &bt BT_CLR
                                                  &trans     &kp BACKSPACE  &trans        &trans  &trans   &kp LEFT_WIN
             >;
         };
@@ -246,10 +246,10 @@
 
         mouse {
             bindings = <
-&trans  &kp LEFT_ALT    &mmv MOVE_UP    &mkp MCLK        &trans  &trans    &trans  &mkp LCLK       &msc SCRL_UP    &mkp RCLK        &none  &none
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &none     &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none
-&trans  &trans          &trans          &trans           &trans  &none     &none   &none           &none           &none            &none  &none
-                                        &trans           &trans  &trans    &trans  &trans          &trans
+&trans  &kp LEFT_ALT    &mmv MOVE_UP    &mkp LCLK        &mkp MCLK  &trans    &trans  &mkp LCLK       &msc SCRL_UP    &mkp RCLK        &none  &none
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none     &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none
+&trans  &trans          &to 0           &trans           &trans     &none     &none   &none           &none           &none            &none  &none
+                                        &trans           &trans     &trans    &trans  &trans          &trans
             >;
         };
     };
