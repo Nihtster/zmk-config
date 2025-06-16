@@ -1,5 +1,7 @@
 manifest:
   remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
     - name: m165437   
@@ -9,8 +11,8 @@ manifest:
       remote: urob
       revision: main
       import: app/west.yml
-    - name: nice-view-gem #new entry
-      remote: m165437 #new entry
-      revision: main #new entry
+    - name: nice-view-gem
+      remote: m165437
+      revision: main
   self:
     path: config
