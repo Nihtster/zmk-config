@@ -11,10 +11,12 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-urob
-      remote: urob
-      revision: main
-      import: app/west.yml
+
+    # - name: urob
+    #   remote: urob
+    #   revision: main
+    #   import: app/west.yml
+
     - name: nice-view-gem
       remote: m165437
       revision: main
