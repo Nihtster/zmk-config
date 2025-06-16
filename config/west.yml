@@ -8,6 +8,10 @@ manifest:
       url-base: https://github.com/M165437
   projects:
     - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-urob
       remote: urob
       revision: main
       import: app/west.yml
